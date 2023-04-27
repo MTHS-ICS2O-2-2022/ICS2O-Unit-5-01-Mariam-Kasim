@@ -12,22 +12,22 @@ import (
 )
 
 func main() {
-	//This function is the main function
-	//variables
+	// This function is the main function
+	// variables
 	var guess int
 	var answer int
 
-	//input
+	// input
 	fmt.Println("Enter a number between 1 and 6: ")
 	fmt.Scanln(&guess)
 
-	//process
+	// process
 	rand.Seed(time.Now().UnixNano())
 	min := 1
 	max := 6
 	answer = rand.Intn(max-min) + min
 
-	//output
+	// output
 	if guess == answer {
 		fmt.Println("You guessed correctly!")
 	}
